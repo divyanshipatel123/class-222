@@ -26,7 +26,7 @@ const transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-        user: 'divyanshipatelspecialone@gmail.com',
+        user: 'divyanshipatel2008apr13@gmail.com',
         pass: 'nrzpdjllgsuenirs',
     },
     secure: true,
@@ -44,7 +44,7 @@ app.post("/send-mail", (req, res) => {
     const to = req.body.to;
     const url = req.body.url;
     const mailData = {
-        from: "divyanshipatelspecialone@gmail.com",
+        from: "divyanshipatel2008apr13@gmail.com",
         to: to,
         subject: "Join the video chat with me!",
         html: `<p>Hey there,</p><p>Come and join me for a video chat here - ${url}</p>`
